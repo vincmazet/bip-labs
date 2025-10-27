@@ -391,10 +391,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="segmentation">
 <span id="p-lab4"></span><h1>Segmentation<a class="headerlink" href="#segmentation" title="Permalink to this heading">#</a></h1>
-<p>Three methods will be compared to segment the coins on the image <a href="../_static/data/observation.png">observation.png</a>:
+<p>Three methods will be compared to segment the coins on the image <a class="reference download internal" download="" href="_downloads/24cb00c29da1d928800057d130486a88/observation.png"><span class="xref download myst">observation.png</span></a>:
 binary thresholding, Otsu’s method, and local thresholding.
 The methods will be evaluated through the Dice coefficient,
-by using the ground truth available in image <a href="../_static/data/groundtruth.png">groundtruth.png</a>.</p>
+by using the ground truth available in image <a class="reference download internal" download="" href="_downloads/62b0833e7fa02503ec73f4c03e420899/groundtruth.png"><span class="xref download myst">groundtruth.png</span></a>.</p>
 <ul>
 <li><p>Apply binary thresholding to the image, by choosing manually the threshold value.
 Compute the Dice coefficient.</p>
@@ -429,14 +429,14 @@ Suggest improvements.</p></li>
 <p>The image is:</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/97bb7b2e27ce5e2a7572a2ecb15228639d0522193d73dc791d98d2b7aa4a77c8.png" src="_images/97bb7b2e27ce5e2a7572a2ecb15228639d0522193d73dc791d98d2b7aa4a77c8.png" />
+<img alt="_images/d864f8e03f24626c5908a442a7f43b13bf577d36758a9ad43a0ccde8dd33c31f.png" src="_images/d864f8e03f24626c5908a442a7f43b13bf577d36758a9ad43a0ccde8dd33c31f.png" />
 </div>
 </div>
 <p>To evaluate the performance of a segmentation method, we can compare the segmentation with the ground truth,
 <em>i.e.</em> the optimal segmentation, shown below.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/8d2c7f4d187208b0326e8a3a98821059428ebea86eb64677b07d1b1feded260f.png" src="_images/8d2c7f4d187208b0326e8a3a98821059428ebea86eb64677b07d1b1feded260f.png" />
+<img alt="_images/7bf91bbdcc24292aebdbbfcd439c0a3584ae02f7433c224008d8fcb43f8b646d.png" src="_images/7bf91bbdcc24292aebdbbfcd439c0a3584ae02f7433c224008d8fcb43f8b646d.png" />
 </div>
 </div>
 <section id="binary-thresholding">
@@ -445,7 +445,7 @@ Suggest improvements.</p></li>
 We choose here to set the threshold to 90.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/78f79efc8f67ecc8f2003ee81870d09ac5b771640095403246a75db5f5b44794.png" src="_images/78f79efc8f67ecc8f2003ee81870d09ac5b771640095403246a75db5f5b44794.png" />
+<img alt="_images/104c00885f4b656d2af92cca3d562fbe3b9d79dd80f5f5edde6583efe4ab1d19.png" src="_images/104c00885f4b656d2af92cca3d562fbe3b9d79dd80f5f5edde6583efe4ab1d19.png" />
 </div>
 </div>
 <p>With this threshold, the Dice coefficient equals 0.711, which is not very satisfying
@@ -461,7 +461,7 @@ On the contrary, Otsu’s method <em>automatically</em> calculates a threshold v
 However, for the considered image, the segmentation is still not very satisfying.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/a66472594d09d2da7b6ee85ffce713843d468ee60bf1fab3417628cf32295a46.png" src="_images/a66472594d09d2da7b6ee85ffce713843d468ee60bf1fab3417628cf32295a46.png" />
+<img alt="_images/2270ad62bbc54d67146c65d5db0917bc1a05e820e893dab339f2c2489a51efd7.png" src="_images/2270ad62bbc54d67146c65d5db0917bc1a05e820e893dab339f2c2489a51efd7.png" />
 </div>
 </div>
 <p>Otsu’s method finds a lower threshold than the one set manually above.
@@ -478,13 +478,13 @@ However, it has the interest of discussing the Otsu’s threshold.</p>
 The best threshold corresponds to the red line.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/92b0409fb1dbca4ba12e04c04f22c8b7acbb365828040f59a1d7fab2bfa3c2b7.png" src="_images/92b0409fb1dbca4ba12e04c04f22c8b7acbb365828040f59a1d7fab2bfa3c2b7.png" />
+<img alt="_images/8dfdcfa97649d4dc60dbc83ce4b9399f339dcba8588c2ce4279480a01023c8c1.png" src="_images/8dfdcfa97649d4dc60dbc83ce4b9399f339dcba8588c2ce4279480a01023c8c1.png" />
 </div>
 </div>
 <p>The threshold that maximizes the Dice equals 60, which gives the result below.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/db629130c906e90ded2730195143dcfc0bc7fd6fa201c0c4a15947184b590856.png" src="_images/db629130c906e90ded2730195143dcfc0bc7fd6fa201c0c4a15947184b590856.png" />
+<img alt="_images/454f22b7759933bf4c90bc6f55d34d200004e4267d2f0084f6d76db6e45f2ee8.png" src="_images/454f22b7759933bf4c90bc6f55d34d200004e4267d2f0084f6d76db6e45f2ee8.png" />
 </div>
 </div>
 <p>Then, Otsu’s threshold is not the best, in the sense of Dice coefficient.</p>
@@ -508,7 +508,7 @@ The simplest way is to define <span class="math notranslate nohighlight">\(T_{m,
 It is also possible to compute a weighted mean, such as the default option of <code class="docutils literal notranslate"><span class="pre">skimage.filters.threshold_local</span></code>.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/e306ed69d74850cf600ea3caf72203794405c06485cab9792bd019cbf05fdee3.png" src="_images/e306ed69d74850cf600ea3caf72203794405c06485cab9792bd019cbf05fdee3.png" />
+<img alt="_images/e5e51f57ccc3ea314456ca465c6ed56f8f9ff64405cf2383f3a7dcacd19cb477.png" src="_images/e5e51f57ccc3ea314456ca465c6ed56f8f9ff64405cf2383f3a7dcacd19cb477.png" />
 </div>
 </div>
 <p>As you can see, the Dice coefficient is now very good!
@@ -520,7 +520,7 @@ In this example, how can you find the best size?</p>
 <p>The four previous results are presented below to ease a visual comparison.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/08a7882f58907bab20942ad74155d8b6b60cbaee9a18d18e004531f2069ba897.png" src="_images/08a7882f58907bab20942ad74155d8b6b60cbaee9a18d18e004531f2069ba897.png" />
+<img alt="_images/68193fab06cabe8f2fe3e0c8655a1baa4b95fb277b75eb483f6c5e1d2b7a9cc8.png" src="_images/68193fab06cabe8f2fe3e0c8655a1baa4b95fb277b75eb483f6c5e1d2b7a9cc8.png" />
 </div>
 </div>
 </section>
