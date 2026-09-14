@@ -1,0 +1,53 @@
+format: jb-book
+
+root: index
+
+parts:
+
+- caption: Digital images
+  chapters:
+  - file: lab11
+  - file: lab12
+  - file: lab13
+  - file: lab14
+  - file: lab15
+  - file: lab16
+  - file: lab17
+
+- caption: Transforms + Filtering
+  chapters:
+  - file: lab21
+  - file: lab22
+  - file: lab23
+
+- caption: Compression + Interpolation
+  chapters:
+  - file: lab31
+  - file: lab32
+
+- caption: Segmentation
+  chapters:
+  - file: lab4
+
+- caption: Binary Image Processing
+  chapters:
+  - file: lab5
+
+- caption: Restoration
+  chapters:
+  - file: lab61
+  - file: lab62
+
+- caption: Feature Detection
+  chapters:
+  - file: lab71
+  - file: lab72
+  - file: lab73
+
+- caption: Appendices
+  chapters:
+  - url: https://vincmazet.github.io/bip/
+    title: Textbook
+  - file: python
+  - url: https://moodle.unistra.fr/course/view.php?id=6678
+    title: Moodle
