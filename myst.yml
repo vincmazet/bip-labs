@@ -1,0 +1,109 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+
+version: 1
+
+project:
+
+# ----------------------------------------------------------------------------------------------- #
+
+# Metadata
+
+  id: 807ec977-4e32-4b07-b1cc-7d7c31a145a9
+
+  title: BIP Labs
+  description: Image processing labs at Télécom Physique Strasbourg
+  authors:
+  - name: Vincent Mazet
+    affiliation: Université de Strasbourg
+  github: https://github.com/vincmazet/bip-labs
+  license: CC-BY-NC-4.0
+  
+  # Numérotations
+  numbering:
+    equations: false
+  
+  # Fichier à exclure de la compilation
+  exclude:
+  - .ipynb_checkpoints
+  - demo.ipynb
+
+# ----------------------------------------------------------------------------------------------- #
+
+# Table of contents
+
+  toc:
+
+    - file: intro.ipynb
+
+    # Python + Digital images
+    - file: digital-images/intro.md
+      children:
+      - file: digital-images/lab1.ipynb
+      - file: digital-images/lab2.ipynb
+      - file: digital-images/lab3.ipynb
+      - file: digital-images/lab4.ipynb
+      - file: digital-images/lab5.ipynb
+      - file: digital-images/lab6.ipynb
+      - file: digital-images/lab7.ipynb
+
+    # Transforms + Filtering
+    - file: filtering/intro.md
+      children:
+      - file: filtering/lab1.ipynb
+      - file: filtering/lab2.ipynb
+      - file: filtering/lab3.ipynb
+
+    # Feature Detection
+    - file: detection/intro.md
+      children:
+      - file: detection/lab1.ipynb
+      - file: detection/lab2.ipynb
+      - file: detection/lab3.ipynb
+
+    # Segmentation
+    - file: segmentation/intro.md
+      children:
+      - file: segmentation/lab1.ipynb
+
+    # Binary Image Processing
+    - file: binary/intro.md
+      children:
+      - file: binary/lab1.ipynb
+
+    # Compression + Interpolation
+    - file: interpolation/intro.md
+      children:
+      - file: interpolation/lab1.ipynb
+      - file: interpolation/lab2.ipynb
+
+    # Restoration
+    - file: restoration/intro.md
+      children:
+      - file: restoration/lab1.ipynb
+      - file: restoration/lab2.ipynb
+
+    # Appendices
+    - file: appendices.md
+      children:
+      - url: https://vincmazet.github.io/bip/
+        title: Textbook
+      - file: python.ipynb
+      - url: https://moodle.unistra.fr/course/view.php?id=6678
+        title: Moodle
+
+# ----------------------------------------------------------------------------------------------- #
+
+# Website configuration
+
+site:
+
+  template: book-theme
+  
+  options:
+    outline_maxdepth: 2
+    favicon: src/logo-bip-site.png
+    logo: src/logo-bip-site.png
+    hide_authors: true
+    hide_myst_branding: true
+    folders: true
+    style: src/style.css
