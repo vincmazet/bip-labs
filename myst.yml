@@ -52,6 +52,7 @@ project:
       - file: filtering/lab1.ipynb
       - file: filtering/lab2.ipynb
       - file: filtering/lab3.ipynb
+      - file: filtering/lab4.ipynb
 
     # Feature Detection
     - file: detection/intro.md
