@@ -50,7 +50,7 @@
 .article hr {
   border-top: 2px solid rgb(59 130 246);
   height: 6rem;
-  background: linear-gradient(to bottom, #bfdbfe, #bfdbfe, #fff);
+  background: linear-gradient(to bottom, #bfdbfe, #bfdbfe, #fff0);
   position: relative;
   margin: 2rem 0;
   overflow: visible;
