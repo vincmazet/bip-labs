@@ -1,1 +1,1 @@
-# Binary Image Processing
+# Binary image processing
